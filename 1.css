@@ -1,9 +1,54 @@
+/* * {
+    margin: 0px;
+}
 body {
     font-family: 'Segoe UI';
+    background-color: #121f26;
 }
 h1 {
     text-align: center;
 }
 img {
     width: 50px;
+} */
+
+body {
+    overflow: hidden;
+}
+
+.container-fluid {
+    background-color: #121f26;
+}
+
+.rotated {
+    background-color: #1fa184;
+    width: 518px;
+    height: 439px;
+    transform: rotate(35deg);
+    position: absolute;
+    top: -251px;
+    right: -172px;
+}
+
+nav {
+    margin: 0 125px;
+    text-transform: uppercase;
+}
+
+nav a.nav-link {
+    color: white;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .rotated {
+        width: 155px;
+        height: 131px;
+        top: -75px;
+        right: -70px;
+    }
+    nav img {
+        width: 73px;
+        height: 47px;
+    }
 }
